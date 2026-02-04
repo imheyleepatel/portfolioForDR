@@ -31,7 +31,8 @@ const About = () => {
       <div className="container-narrow">
         <h2 className="mb-8 text-center md:text-left">About</h2>
 
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-start">
+
 
           {/* TEXT SIDE */}
           <div className="max-w-3xl">
@@ -73,7 +74,8 @@ const About = () => {
               <img
                 src={activeImage.img}
                 alt={activeImage.label}
-                className="w-full h-[400px] object-cover rounded-2xl shadow-lg"
+                className="w-full aspect-[4/5] md:h-[400px] object-cover rounded-2xl shadow-lg"
+
               />
 
               <span className="absolute bottom-3 left-3 bg-black/60 text-white text-sm px-3 py-1 rounded-lg">
@@ -82,14 +84,14 @@ const About = () => {
             </div>
 
             {/* SCROLLABLE THUMBNAILS */}
-            <div className="flex gap-3 overflow-x-auto pb-2">
+            <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
               {slides.map((slide, index) => (
                 <img
                   key={index}
                   src={slide.img}
                   alt={slide.label}
                   onClick={() => setActiveImage(slide)}
-                  className={`h-20 w-28 min-w-[110px] object-cover rounded-lg cursor-pointer transition
+                  className={`h-16 w-24 md:h-20 md:w-28 min-w-[90px] md:min-w-[110px] object-cover rounded-lg cursor-pointer transition
                     ${
                       activeImage.img === slide.img
                         ? "ring-2 ring-primary"
