@@ -8,7 +8,7 @@ import Academic from "@/components/Academic";
 import Registrations from "@/components/Registrations";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Review from "@/components/review";
+import Review from "@/components/Review";
 
 const Index = () => {
   return (
