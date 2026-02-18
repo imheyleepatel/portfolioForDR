@@ -6,6 +6,8 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  Youtube,
+  Globe,
 } from "lucide-react";
 
 const contactInfo = [
@@ -47,6 +49,16 @@ const socialLinks = [
     label: "LinkedIn",
     link: "https://www.linkedin.com/in/dr-shivang-patel-a244103a",
   },
+  {
+    icon: Youtube,
+    label: "YouTube",
+    link: "https://www.youtube.com/@drshivangpatel",
+  },
+  {
+    icon: Globe,
+    label: "Google",
+    link: "https://share.google/55yTWkjBYw1FMrOAu",
+  },
 ];
 
 const Contact = () => {
@@ -60,7 +72,7 @@ const Contact = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-12">
-
+          
           {/* CONTACT INFO */}
           <div>
             <h3 className="text-xl font-semibold mb-6">
@@ -97,7 +109,7 @@ const Contact = () => {
                   href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 rounded-xl border hover:bg-primary/5 transition"
+                  className="flex items-center gap-3 p-4 rounded-xl border hover:bg-primary/5 transition hover:shadow-md"
                 >
                   <social.icon className="w-5 h-5 text-primary" />
                   <span className="font-medium">{social.label}</span>
