@@ -38,7 +38,7 @@ const About = () => {
           {/* TEXT */}
           <div className="text-base md:text-lg leading-relaxed">
             <p className="mb-4">
-              Dr. Shivang Patel, MD, DNB, EDIC is a Consultant Critical Care Physician with over 10 years of clinical experience in managing critically ill patients across high-acuity tertiary care ICU settings.
+              Dr. Shivang Patel is a Consultant Critical Care Physician with over 10 years of clinical experience in managing critically ill patients across high-acuity tertiary care ICU settings.
             </p>
 
             <p className="mb-4">

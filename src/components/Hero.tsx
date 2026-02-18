@@ -35,7 +35,7 @@ const Hero = () => {
               Dr. Shivang Patel
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-2 font-medium">
-              MD, FCCP, FCCM
+              MD, DNB, EDIC | FCCP | FCCM
             </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
               Consultant Intensivist specializing in critical care medicine, mechanical ventilation, and complex ICU management.
